@@ -2,7 +2,7 @@ import { Hono } from 'hono'
 import nodemailer from 'nodemailer';
 const app = new Hono()
 
-app.get('/'， (c) => {
+app.get('/', (c) => {
   const transporter = nodemailer.createTransport({
     host: 'smtp.163.com',
     port: 465,
