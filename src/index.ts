@@ -10,6 +10,11 @@ const transporter = nodemailer.createTransport({
      host: '123.58.180.7', // smtp.163.com的实际IP
     port: 465,                  // SSL 端口
     secure: true,               // 使用 SSL
+tls: {
+
+    rejectUnauthorized: false // 忽略证书验证 必须开启
+
+  },
     auth: {
         user: 'bigbaidog@163.com',  // 你的 163 邮箱地址
         pass: 'TSq7LMCK6QFGgsH2'       // 前面获取的授权码
