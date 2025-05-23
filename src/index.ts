@@ -5,10 +5,11 @@ const app = new Hono()
 app.get('/', (c) => {
   const transporter = nodemailer.createTransport({
     host: 'smtp.163.com',
+secure: true,
     port: 465,
     auth: {
       user: 'bigbaidog@163.com',
-      pass: 'Netease051326.'
+      pass: 'TSq7LMCK6QFGgsH2'
     },
   });
   const mailOptions = {
@@ -16,7 +17,6 @@ app.get('/', (c) => {
     to: '1194423126@qq.com',                     // 收件人
     subject: '测试邮件',                                // 邮件主题
     text: '这是一封测试邮件的正文内容。',                  // 纯文本正文
-    html: '<p>这是一封 <b>测试邮件</b> 的 HTML 正文内容。</p>', // HTML 正文
   };
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
