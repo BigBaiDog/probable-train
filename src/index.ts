@@ -6,7 +6,7 @@ app.get('/', async(c) => {
 
 
   const transporter = nodemailer.createTransport({
-    host: "2408:8756:3af0:3009::123",
+    host: "smtp.qq.com",
     port: 465,
     // secure: false, // upgrade later with STARTTLS
     auth: {
