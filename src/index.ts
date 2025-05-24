@@ -10,8 +10,8 @@ app.get('/', async(c) => {
     port: 465,
     // secure: false, // upgrade later with STARTTLS
     auth: {
-      user: 'bigbaidog@163.com',
-      pass: 'TSq7LMCK6QFGgsH2'
+      user: '1194423126@qq.com',
+      pass: 'papytfjwhpxzigba'
     },
 
   });
@@ -19,7 +19,7 @@ app.get('/', async(c) => {
   async function sendMail() {
     try {
         const info = await transporter.sendMail({
-            from: 'bigbaidog@163.com', // 发件人显示名和邮箱
+            from: '1194423126@qq.com', // 发件人显示名和邮箱
             to: '1194423126@qq.com',               // 收件人邮箱
             subject: '来自 Node.js 的问候',             // 邮件主题
             text: '你好！这是一封用 Node.js 发送的测试邮件！', // 纯文本内容
