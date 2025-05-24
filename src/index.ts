@@ -19,7 +19,7 @@ app.get('/', async(c) => {
   async function sendMail() {
     try {
         const info = await transporter.sendMail({
-            from: '"博主小助手" <your_email@163.com>', // 发件人显示名和邮箱
+            from: '1194423126@qq.com', // 发件人显示名和邮箱
             to: 'bigbaidog@163.com',               // 收件人邮箱
             subject: '来自 Node.js 的问候',             // 邮件主题
             text: '你好！这是一封用 Node.js 发送的测试邮件！', // 纯文本内容
